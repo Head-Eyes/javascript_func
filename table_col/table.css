@@ -4,3 +4,27 @@ table, td,th{
     text-align: center;
     padding: 2px;
 }
+th{
+    background-color: brown;
+}
+
+table tbody > tr
+{
+    background-color: cyan;
+}
+
+tbody thead ~ tbody > tr
+{
+    background-color:rgb(135, 136, 222) ;
+}
+
+tbody tr:nth-child(2n)
+{
+    background-color: beige;
+}
+
+tbody tr:hover{
+    background-color: lightgreen;
+
+
+}

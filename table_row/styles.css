@@ -1,0 +1,21 @@
+table, tbody, thead, tr, th , td
+{
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+
+tr td:last-child
+{
+    background-color: powderblue;
+}
+
+tr td:nth-last-child(3)
+{
+    background-color: burlywood;
+}
+
+/*tr td:last-child,tr td:nth-last-child(3)
+{
+    background-color: powderblue;
+}
+*/

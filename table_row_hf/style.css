@@ -1,0 +1,47 @@
+table,tbody, tr, th, td
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+/*
+tbody, thead
+{
+    text-align: center;
+}
+*/
+
+tr td:nth-last-child(3)
+{
+    background-color: aqua;
+} 
+
+tr td:last-child
+{
+    background-color: aqua;
+}
+
+tr:not(:has(td[rowspan]))+tr:not(:has(td[rowspan])):hover td
+{
+    background-color: powderblue;
+}
+
+table tbody tr:has(td[rowspan]):hover td
+{
+    background-color: powderblue;
+}
+
+tbody tr:has(td[rowspan]):hover+tr td
+{
+    background-color: powderblue;
+}
+
+tr:has(td[rowspan]):has(+tr:hover) td
+{
+    background-color: powderblue
+}
+
+tr:has(td[rowspan]):has(+tr:hover)+tr td
+{
+    background-color: powderblue;
+}

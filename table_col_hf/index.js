@@ -52,9 +52,6 @@ const tbody = document.createElement('tbody')
 table.appendChild(tbody)
 
 //2.
-for(const c of table)
-{
-    tbody.createElement('tr')
-}
+
 
 //3.
